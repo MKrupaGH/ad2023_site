@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /*Primary text*/
+  --Very-dark-desaturated-blue: hsl(238, 29%, 16%);
+  --Soft-red: hsl(14, 88%, 65%);
+  /*Neutral text*/
+  --Very-dark-grayish-blue: hsl(237, 12%, 33%);
+  --Dark-grayish-blue: hsl(240, 6%, 50%);
+  /*line divider*/
+  --Light-grayish-blue: hsl(240, 5%, 91%);
+  /*background gradient*/
+  --Soft-violet: hsl(273, 75%, 66%);
+  --Soft-blue: hsl(240, 73%, 65%);
+  /*background color*/
+  --white: #fff;
+}
+
+body,html {
+  font-size: 12px;
+  font-family: "Kumbh Sans", sans-serif;
+  background: linear-gradient(var(--Soft-violet), var(--Soft-blue));
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+}

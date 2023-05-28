@@ -18,12 +18,12 @@ function App() {
     setData(values.data);
   }
 
-  console.log(data);
-
   return (
     <div className="App">
-      <DateMenu handleOption={handleOption} />
-      {line}
+      <div className="menu-container">
+        <DateMenu handleOption={handleOption} />
+      </div>
+      <div className="chart-container">{line}</div>
     </div>
   );
 }

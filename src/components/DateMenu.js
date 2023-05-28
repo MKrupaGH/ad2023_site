@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from "react";
 
+import "../styles/date-menu.css";
+
+import logo from "../images/logo.png";
 function DateMenu({ handleOption }) {
   const [dates, setDates] = useState([]);
 
@@ -13,21 +16,24 @@ function DateMenu({ handleOption }) {
   }, []);
 
   return (
-    <div>
-      <select
-        className={"form-select form-select-lg mb-3"}
-        aria-label=".form-select-lg example"
-        name=""
-        id=""
-        onChange={(e) => handleOption(e)}
-      >
-        <option>Select date</option>
-        {dates.map((date) => (
-          <option key={date} value={date}>
-            {date}
-          </option>
-        ))}
-      </select>
+    <div className="logo-select">
+      <img src={logo} alt="" />
+      <div className="select-window">
+        <select
+          className={"select-option form-select form-select-lg"}
+          aria-label=".form-select-lg example"
+          name=""
+          id=""
+          onChange={(e) => handleOption(e)}
+        >
+          <option>Select date</option>
+          {dates.map((date) => (
+            <option key={date} value={date}>
+              {date}
+            </option>
+          ))}
+        </select>
+      </div>
     </div>
   );
 }

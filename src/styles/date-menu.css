@@ -1,0 +1,9 @@
+.menu-container {
+  display: grid;
+  justify-content: space-around;
+}
+
+img {
+  height: 70%;
+  margin-bottom: 1em;
+}

@@ -8,7 +8,9 @@ function DateMenu({ handleOption }) {
 
   useEffect(() => {
     const datesFetch = async () => {
-      const dates = await (await fetch("http://localhost:5000/test")).json();
+      const dates = await (
+        await fetch("https://private-committee-production.up.railway.app//test")
+      ).json();
       setDates(dates.data);
     };
 

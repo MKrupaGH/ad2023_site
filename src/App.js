@@ -10,7 +10,7 @@ function App() {
 
   async function handleOption(e) {
     const params = await fetch(
-      `http://localhost:5000/date?date=${e.target.value}`
+      `https://private-committee-production.up.railway.app/date?date=${e.target.value}`
     );
 
     const values = await params.json();
